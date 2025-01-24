@@ -1,0 +1,31 @@
+:root {
+    --inter: "Inter";
+    --IBM: "IBM Plex Sans Devanagari";
+    --open-sans: "Open Sans";
+    --primary-color: #000E01;
+    --secondary-color: #79AC78;
+    --white-color: #FFFFFF;
+    --third-color: #618264;
+    --text-color: #443434;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+/*? -------------------------------------------------------------------------------------------------------------------------------------------------------- */
