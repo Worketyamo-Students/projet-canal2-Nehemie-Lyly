@@ -7,6 +7,10 @@
   --white-color: #ffffff;
   --third-color: #618264;
   --text-color: #443434;
+  --font-size-h1: 4.3rem;
+  --font-size-p: 2.2rem;
+  --font-weight-h1: 600;
+  --font-weight-p: 400;
 }
 
 *,
@@ -36,20 +40,20 @@ body {
 .actualite {
   width: 100%;
   height: 70rem;
-  padding: 3rem;
+  padding: 5rem 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 3.5rem;
+  gap: 4rem;
   /* background-color: red;  */
 }
 
 .actualite > h1 {
   font-family: var(--IBM);
   color: var(--primary-color);
-  font-size: 4.3rem;
-  font-weight: 600;
+  font-size: var(--font-size-h1);
+  font-weight: var(--font-weight-h1);
 }
 
 .actualite-martinezzogo {
@@ -67,14 +71,74 @@ body {
 
 /* !section programme */
 
+.programme {
+  width: 100%;
+  height: 55rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 4rem 5rem 4rem;
+  gap: 4rem;
+  /* background-color: red; */
+}
 
-@media screen and (width < 640px){
+.programme > h1 {
+  font-family: var(--IBM);
+  color: var(--primary-color);
+  font-size: var(--font-size-h1);
+  font-weight: var(--font-weight-h1);
+}
 
-html {
+.programme-container {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  width: 100%;
+  /* height: 95%;
+  background-color: red; */
+}
+
+.programme-container-content-one {
+  flex: 1;
+  /* height: 100%; */
+}
+
+.programme-container-content-one > iframe {
+  border-radius: 2rem;
+}
+
+.programme-container-content-two {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.programme-container-content-two > h1 {
+  font-family: var(--IBM);
+  font-size: var(--font-size-h1);
+  font-weight: var(--font-weight-h1);
+  color: var(--third-color);
+}
+
+.programme-container-content-two > p {
+  font-family: var(--open-sans);
+  font-size: var(--font-size-p);
+  font-weight: var(--font-weight-p);
+}
+
+.programme-container-content-two-icone {
+  display: flex;
+  gap: 2rem;
+}
+
+@media screen and (width < 640px) {
+  html {
     overflow-x: hidden;
   }
 
-/*?section martinez zogo  */
+  /*?section martinez zogo  */
 
   .actualite {
     height: 35rem;
@@ -97,5 +161,26 @@ html {
 
   /*?section programme */
 
+  .programme {
+    width: 100%;
+  }
+  
+  .programme > h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
 
+  .programme-container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .programme-container-content-one {
+    width: 100%;
+  }
+
+  .programme-container-content-one > iframe {
+    border-radius: 0;
+  }
 }
+
