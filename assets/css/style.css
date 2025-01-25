@@ -20,6 +20,7 @@
 
 html {
   font-size: 10px;
+  overflow-x: hidden;
 }
 
 body {
@@ -35,7 +36,7 @@ body {
 .actualite {
   width: 100%;
   height: 70rem;
-  padding: 4rem;
+  padding: 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -58,7 +59,7 @@ body {
 }
 
 .actualite-martinezzogo > iframe {
-  display: block;
+  /* display: block; */
   border-radius: 2rem;
   width: 100%;
   height: 100%;
@@ -66,3 +67,35 @@ body {
 
 /* !section programme */
 
+
+@media screen and (width < 640px){
+
+html {
+    overflow-x: hidden;
+  }
+
+/*?section martinez zogo  */
+
+  .actualite {
+    height: 35rem;
+    /* padding: 1rem 1rem; */
+    gap: 2rem;
+  }
+
+  .actualite > h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .actualite-martinezzogo {
+    width: 100%;
+  }
+
+  .actualite-martinezzogo > iframe {
+    border-radius: 0;
+  }
+
+  /*?section programme */
+
+
+}
