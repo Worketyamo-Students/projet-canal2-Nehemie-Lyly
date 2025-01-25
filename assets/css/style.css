@@ -1,12 +1,12 @@
 :root {
-    --inter: "Inter";
-    --IBM: "IBM Plex Sans Devanagari";
-    --open-sans: "Open Sans";
-    --primary-color: #000E01;
-    --secondary-color: #79AC78;
-    --white-color: #FFFFFF;
-    --third-color: #618264;
-    --text-color: #443434;
+  --inter: "Inter";
+  --IBM: "IBM Plex Sans Devanagari";
+  --open-sans: "Open Sans";
+  --primary-color: #000e01;
+  --secondary-color: #79ac78;
+  --white-color: #ffffff;
+  --third-color: #618264;
+  --text-color: #443434;
 }
 
 *,
@@ -29,3 +29,37 @@ body {
 }
 
 /*? -------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* !section martinez zogo */
+
+.actualite {
+  width: 100%;
+  height: 70rem;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3.5rem;
+  /* background-color: red;  */
+}
+
+.actualite > h1 {
+  font-family: var(--IBM);
+  color: var(--primary-color);
+  font-size: 4.3rem;
+  font-weight: 600;
+}
+
+.actualite-martinezzogo {
+  width: 80%;
+  height: 62rem;
+  /* background-color: blue; */
+}
+
+.actualite-martinezzogo > iframe {
+  display: block;
+  border-radius: 2rem;
+  width: 100%;
+  height: 100%;
+}
