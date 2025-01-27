@@ -27,5 +27,62 @@ body {
   height: 100vh;
   overflow-x: hidden;
 }
+.entete{
+  display: flex;
+  justify-content: space-between;
+}
+.navbar {
+  display: flex;
+  padding-left: 12rem;
+  justify-content: space-between; 
+  align-items: center; 
+}
 
-/*? -------------------------------------------------------------------------------------------------------------------------------------------------------- */
+.menu {
+  list-style-type: none; 
+  padding: 0; 
+  margin: 0;
+  display: flex; 
+}
+
+.menu li {
+  margin-right: 45px; 
+  font-size: 16px;
+}
+
+.menu a {
+  color: #000E01; 
+  text-decoration: none; 
+  transition: color 0.2s ease; 
+}
+
+.menu a:hover {
+  color: #79AC78; 
+  border-bottom: 1px solid #79AC78;
+}
+
+.bouton {
+  background-color: #79AC78; 
+  color:#FFFFFF ;
+  padding: 10px 23px; 
+  border:1px solid;
+  border-radius: 10px; 
+  cursor: pointer;
+  margin-right: 90px;
+  transition: background-color 0.2s ease; 
+}
+
+.bouton:hover {
+  background-color: #3e8e41;
+}
+/* ------- navbar --------------------------*/
+
+.container{
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-left: 124px;
+  padding-top: 60px;
+}
+.image-Nganou{
+  
+}
