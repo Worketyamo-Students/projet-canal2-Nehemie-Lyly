@@ -77,10 +77,8 @@ body {
 /* ------- navbar --------------------------*/
 
 .container{
-  display: flex;
-  justify-content: space-between;
-  padding-top: 1rem;
-  gap: 2rem;
+  display: flex; 
+  width: 100%;
 }
 .title{
   border-left: 7px solid #618264; 
@@ -94,9 +92,11 @@ body {
 }
 .image-Nganou{
   background-image: url(/assets/img/francis-nganou.svg);
-  background-color: #3e8e41;
-  background-size: cover;
+  height: 200px; 
+  width: 100%; 
+  background-size: cover; 
   flex: 1.5;
+  
 }
 .actu{
   flex: 1;
@@ -121,3 +121,30 @@ body {
   background: linear-gradient();
 
 }
+.tree-images{
+  align-items: center;
+  justify-content: space-between;
+  gap: 6.8rem;
+  display: flex;
+  padding-top: 5rem;
+}
+.first{
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+.first > img{
+  width: 28rem;
+  height: 34rem;
+  margin-top: 48px;
+}
+.little{
+  color:var(--third-color) ;
+  font-family: var(--inter);
+  font-size: 6px;
+}
+.title1{
+  font-family: var(--IBM);
+  font-size: 12px;
+}
+
