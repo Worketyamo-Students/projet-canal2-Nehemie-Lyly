@@ -150,6 +150,7 @@ body {
   padding-top: 5rem;
 }
 
+
 /* .first{ */
 /*? -------------------------------------------------------------------------------------------------------------------------------------------------------- */
 
@@ -324,7 +325,7 @@ body {
 }
 
 /* Médias queries pour les smartphones (environ 480px) */
-@media only screen and  (max-width: 480px) {
+@media only screen and (max-width: 480px) {
   body {
     padding: 0 1rem;
   }
@@ -520,150 +521,151 @@ body {
     justify-content: space-between;
     gap: 3rem;
   }
-    html {
-      overflow-x: hidden;
-    }
 
-    /*!section martinez zogo  */
-
-    .actualite {
-      height: 35rem;
-      gap: 2rem;
-    }
-
-    .actualite>h1 {
-      font-size: 2rem;
-      text-align: center;
-    }
-
-    .actualite-martinezzogo {
-      width: 100%;
-    }
-
-    .actualite-martinezzogo>iframe {
-      border-radius: 0;
-    }
-
-    /*!section programme */
-
-    .programme {
-      width: 100%;
-      padding: 2rem;
-    }
-
-    .programme>h1 {
-      font-size: 2rem;
-      text-align: center;
-    }
-
-    .programme-container {
-      flex-direction: column;
-      gap: 1rem;
-      width: 100%;
-    }
-
-    .programme-container-content-one {
-      width: 100%;
-    }
-
-    .programme-container-content-one>iframe {
-      border-radius: 0;
-      width: fit-content;
-      width: 100%;
-      height: 100%;
-    }
-
-    .programme-container-content-two {
-      gap: 1.5rem;
-    }
-
-    /* !section news */
-
-    .news {
-      padding: 3rem;
-      overflow-x: scroll;
-      gap: 3rem;
-
-    }
-
-    /* !section comment */
-
-    .comment {
-      flex-direction: column-reverse;
-      width: 100%;
-      height: 80%;
-      padding: 5rem 4rem 5rem 4rem;
-    }
-
-    .comment-video {
-      /* background-color: #000e01; */
-      /* border-radius: 0; */
-      width: 100%;
-      /* height: 100%;  */
-    }
-
-    .comment-video>iframe {
-      border-radius: O;
-      width: 100%;
-      /* height: 100%; */
-    }
-
-    /*  !leader*/
-
-    .leader {
-      flex-direction: column;
-      align-items: normal;
-      padding: 1rem;
-      gap: 2rem;
-      width: 100%;
-    }
-
-    .barre-verte3 {
-      display: none;
-    }
-
-    .barre-verte2 {
-      height: 4rem;
-      width: 1.2rem;
-    }
-
-    .pub>h1 {
-      font-size: 3rem;
-    }
-
-    .leader-barre {
-      align-items: end;
-      flex-direction: row;
-      writing-mode: horizontal-tb;
-      transform: none;
-      gap: 1.5rem;
-    }
-
-    .leader-img {
-      width: 100%;
-      /* height: 25rem; */
-      /* background: red; */
-    }
-
-    .leader-img>img {
-      width: 100%;
-      /* height: 100%; */
-    }
-
-    /* !section-women */
-
-    .women {
-      padding: 5rem 2rem 5rem 2rem;
-      overflow-x: scroll;
-    }
-
-    /* !footer */
-
-    .container>img {
-      width: 40%;
-    }
-
-    .container-icon>a>img {
-      width: 3rem;
-    }
+  html {
+    overflow-x: hidden;
   }
+
+  /*!section martinez zogo  */
+
+  .actualite {
+    height: 35rem;
+    gap: 2rem;
+  }
+
+  .actualite>h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .actualite-martinezzogo {
+    width: 100%;
+  }
+
+  .actualite-martinezzogo>iframe {
+    border-radius: 0;
+  }
+
+  /*!section programme */
+
+  .programme {
+    width: 100%;
+    padding: 2rem;
+  }
+
+  .programme>h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .programme-container {
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .programme-container-content-one {
+    width: 100%;
+  }
+
+  .programme-container-content-one>iframe {
+    border-radius: 0;
+    width: fit-content;
+    width: 100%;
+    height: 100%;
+  }
+
+  .programme-container-content-two {
+    gap: 1.5rem;
+  }
+
+  /* !section news */
+
+  .news {
+    padding: 3rem;
+    overflow-x: scroll;
+    gap: 3rem;
+
+  }
+
+  /* !section comment */
+
+  .comment {
+    flex-direction: column-reverse;
+    width: 100%;
+    height: 80%;
+    padding: 5rem 4rem 5rem 4rem;
+  }
+
+  .comment-video {
+    /* background-color: #000e01; */
+    /* border-radius: 0; */
+    width: 100%;
+    /* height: 100%;  */
+  }
+
+  .comment-video>iframe {
+    border-radius: O;
+    width: 100%;
+    /* height: 100%; */
+  }
+
+  /*  !leader*/
+
+  .leader {
+    flex-direction: column;
+    align-items: normal;
+    padding: 1rem;
+    gap: 2rem;
+    width: 100%;
+  }
+
+  .barre-verte3 {
+    display: none;
+  }
+
+  .barre-verte2 {
+    height: 4rem;
+    width: 1.2rem;
+  }
+
+  .pub>h1 {
+    font-size: 3rem;
+  }
+
+  .leader-barre {
+    align-items: end;
+    flex-direction: row;
+    writing-mode: horizontal-tb;
+    transform: none;
+    gap: 1.5rem;
+  }
+
+  .leader-img {
+    width: 100%;
+    /* height: 25rem; */
+    /* background: red; */
+  }
+
+  .leader-img>img {
+    width: 100%;
+    /* height: 100%; */
+  }
+
+  /* !section-women */
+
+  .women {
+    padding: 5rem 2rem 5rem 2rem;
+    overflow-x: scroll;
+  }
+
+  /* !footer */
+
+  .container>img {
+    width: 40%;
+  }
+
+  .container-icon>a>img {
+    width: 3rem;
+  }
+}
