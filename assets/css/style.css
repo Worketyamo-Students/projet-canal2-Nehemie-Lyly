@@ -32,8 +32,125 @@ body {
   width: 100vw;
   height: 100vh;
   overflow-x: hidden;
+  padding: 0 7rem;
 }
 
+.entete {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 4rem;
+}
+
+.menu li {
+  font-size: 16px;
+}
+
+.menu a {
+  color: #000E01;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.menu a:hover {
+  color: #79AC78;
+  border-bottom: 1px solid #79AC78;
+}
+
+.bouton {
+  background-color: #79AC78;
+  color: #FFFFFF;
+  padding: 10px 23px;
+  border: 1px solid;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.bouton:hover {
+  background-color: #3e8e41;
+}
+
+/* ------- navbar --------------------------*/
+
+/* ------- section-nganou --------------------------*/
+
+.container {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+
+}
+
+.Nganou {
+  background-image: url(/assets/img/francis-nganou.svg);
+  flex: 2;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.Actu {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.info {
+  display: flex;
+}
+
+.barre-texte {
+  border-left: 7px solid #618264;
+  padding-left: 1rem;
+  height: 31px;
+  display: flex;
+  align-items: center;
+}
+
+.infoblock-text {
+  width: 50%;
+  margin-top: 24px;
+}
+
+.infoblock-text>h1 {
+  margin-bottom: 3px;
+  font-size: 1.5rem;
+  margin-left: 11px;
+}
+
+.infoblock-text>p {
+  margin-left: 11px;
+  font-size: 1.1rem;
+}
+
+.texte>h1 {
+  margin-right: 6px;
+}
+
+.tree-images {
+  align-items: center;
+  justify-content: space-between;
+  gap: 6.8rem;
+  display: flex;
+  padding-top: 5rem;
+}
+
+/* .first{ */
 /*? -------------------------------------------------------------------------------------------------------------------------------------------------------- */
 
 /* !section martinez zogo */
@@ -49,7 +166,7 @@ body {
   gap: 4rem;
 }
 
-.actualite > h1 {
+.actualite>h1 {
   font-family: var(--IBM);
   color: var(--primary-color);
   font-size: var(--font-size-h1);
@@ -61,7 +178,7 @@ body {
   height: 62rem;
 }
 
-.actualite-martinezzogo > iframe {
+.actualite-martinezzogo>iframe {
   border-radius: 2rem;
   width: 100%;
   height: 100%;
@@ -79,7 +196,7 @@ body {
   gap: 4rem;
 }
 
-.programme > h1 {
+.programme>h1 {
   font-family: var(--IBM);
   color: var(--primary-color);
   font-size: var(--font-size-h1);
@@ -97,7 +214,7 @@ body {
   flex: 1;
 }
 
-.programme-container-content-one > iframe {
+.programme-container-content-one>iframe {
   border-radius: 2rem;
 }
 
@@ -108,14 +225,14 @@ body {
   gap: 3rem;
 }
 
-.programme-container-content-two > h1 {
+.programme-container-content-two>h1 {
   font-family: var(--IBM);
   font-size: var(--font-size-h1);
   font-weight: var(--font-weight-h1);
   color: var(--third-color);
 }
 
-.programme-container-content-two > p {
+.programme-container-content-two>p {
   font-family: var(--open-sans);
   font-size: var(--font-size-p);
   font-weight: var(--font-weight-p);
@@ -141,315 +258,412 @@ body {
   gap: 0.1rem;
 }
 
-.news-bloc-img > img {
-  width: 30rem;
-  height: 35rem;
+.first>img {
+  width: 28rem;
+  height: 34rem;
+  margin-top: 48px;
 }
 
-.news-bloc-text {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
+.little {
+  color: var(--third-color);
+  font-family: var(--inter);
+  font-size: 6px;
 }
 
-.news-bloc-text > p {
-  font-size: 1.2rem;
-  color: var(--secondary-color);
-}
-
-/* !section comment */
-
-.comment {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 10rem 4rem 5rem 4rem;
-}
-
-.comment-text {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
-}
-
-.comment-text > h1 {
+.title1 {
   font-family: var(--IBM);
-  font-size: var(--font-size-h1);
-  font-weight: var(--font-weight-h1);
-  color: var(--third-color);
+  font-size: 12px;
 }
 
-.comment-icone {
-  display: flex;
-  gap: 2rem;
-}
-
-.comment-text > p {
-  font-family: var(--open-sans);
-  font-size: var(--font-size-p);
-  font-weight: var(--font-weight-p);
-}
-
-.comment-video {
-  flex: 1;
-}
-
-.comment-video > iframe {
-  border-radius: 2rem;
-}
-
-/* !section comment  */
-
-.leader {
-  padding: 10rem 0rem 5rem 3rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 1.5rem;
-  width: 100%;
-}
-
-.leader-barre {
-  display: flex;
-  align-items: center;
-  gap: 4rem;
-  writing-mode: vertical-rl;
-  transform: rotate(180deg);
-}
-
-.pub > h1 {
-  font-weight: var(--font-weight-h1);
-  font-size: 4rem;
-  color: var(--third-color);
-}
-
-.barre-verte2 {
-  height: 5.5rem;
-  width: 1rem;
-  background-color: var(--third-color);
-  font-weight: var(--font-weight-h1);
-  font-size: 2rem;
-}
-
-.barre-verte3 {
-  height: 5.5rem;
-  width: 1rem;
-  background-color: var(--third-color);
-  font-weight: var(--font-weight-h1);
-  font-size: 2rem;
-}
-
-/* !section news */
-
-.women {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-  gap: 5rem;
-  padding: 10rem 2rem 10rem 2rem;
-}
-
-.women-content {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  gap: 0.7rem;
-}
-
-.women-img > img {
-  width: 30rem;
-  height: auto;
-  border-radius: 1rem;
-}
-
-.women-text {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.women-text > p {
-  font-weight: var(--font-weight-p);
-  font-size: 1.2rem;
-  font-style: italic;
-  color: var(--secondary-color);
-}
-
-.women-text > h1 {
-  font-size: 2.4rem;
-  font-weight: var(--font-weight-x);
-  color: var(--primary-color);
-}
-
-/* !footer */
-
-footer {
-  width: 100%;
-  background-color: var(--secondary-color);
-}
-
-.container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  width: 100%;
-  padding: 5rem 0;
-}
-
-.container-icon {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 3rem;
-}
-
-@media screen and (width < 640px) {
-  html {
-    overflow-x: hidden;
+/* Médias queries pour les tablettes (environ 768px) */
+@media only screen and (max-width: 768px) {
+  body {
+    padding: 0 2rem;
   }
 
-  /*!section martinez zogo  */
-
-  .actualite {
-    height: 35rem;
-    gap: 2rem;
+  .navbar {
+    flex-direction: column;
+    align-items: center;
   }
 
-  .actualite > h1 {
-    font-size: 2rem;
-    text-align: center;
-  }
-
-  .actualite-martinezzogo {
-    width: 100%;
-  }
-
-  .actualite-martinezzogo > iframe {
-    border-radius: 0;
-  }
-
-  /*!section programme */
-
-  .programme {
-    width: 100%;
-    padding: 2rem;
-  }
-
-  .programme > h1 {
-    font-size: 2rem;
-    text-align: center;
-  }
-
-  .programme-container {
+  .menu {
     flex-direction: column;
     gap: 1rem;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .Nganou {
+    flex: none;
+    height: 200px;
+  }
+
+  .Actu {
+    flex: none;
+  }
+
+  .tree-images {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .first>img {
     width: 100%;
+    height: auto;
   }
 
-  .programme-container-content-one {
-    width: 100%;
+  .infoblock-text>h1 {
+    font-size: 1.2rem;
   }
 
-  .programme-container-content-one > iframe {
-    border-radius: 0;
-    width: fit-content;
-    width: 100%;
-    height: 100%;
+  .infoblock-text>p {
+    font-size: 1rem;
+  }
+}
+
+/* Médias queries pour les smartphones (environ 480px) */
+@media only screen and  (max-width: 480px) {
+  body {
+    padding: 0 1rem;
   }
 
-  .programme-container-content-two {
-    gap: 1.5rem;
+  .navbar {
+    padding: 1rem;
   }
 
-  /* !section news */
+  .menu li {
+    font-size: 14px;
+  }
 
-  .news {
-    padding: 3rem;
-    overflow-x: scroll;
-    gap: 3rem;
+  .container {
+    margin-top: 20px;
+  }
 
+  .Nganou {
+    height: 150px;
+  }
+
+  .infoblock-text>h1 {
+    font-size: 1rem;
+  }
+
+  .infoblock-text>p {
+    font-size: 0.9rem;
+  }
+
+  .first>img {
+    margin-top: 10px;
+  }
+
+  .news-bloc-img>img {
+    width: 30rem;
+    height: 35rem;
+  }
+
+  .news-bloc-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .news-bloc-text>p {
+    font-size: 1.2rem;
+    color: var(--secondary-color);
   }
 
   /* !section comment */
 
   .comment {
-    flex-direction: column-reverse;
-    width: 100%;
-    height: 80%;
-    padding: 5rem 4rem 5rem 4rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 10rem 4rem 5rem 4rem;
+  }
+
+  .comment-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .comment-text>h1 {
+    font-family: var(--IBM);
+    font-size: var(--font-size-h1);
+    font-weight: var(--font-weight-h1);
+    color: var(--third-color);
+  }
+
+  .comment-icone {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .comment-text>p {
+    font-family: var(--open-sans);
+    font-size: var(--font-size-p);
+    font-weight: var(--font-weight-p);
   }
 
   .comment-video {
-    /* background-color: #000e01; */
-    /* border-radius: 0; */
-    width: 100%;
-    /* height: 100%;  */
+    flex: 1;
   }
 
-  .comment-video > iframe {
-    border-radius: O;
-    width: 100%;
-    /* height: 100%; */
+  .comment-video>iframe {
+    border-radius: 2rem;
   }
 
-  /*  !leader*/
+  /* !section comment  */
 
   .leader {
-    flex-direction: column;
-    align-items: normal;
-    padding: 1rem;
-    gap: 2rem;
+    padding: 10rem 0rem 5rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
     width: 100%;
-  }
-
-  .barre-verte3 {
-    display: none;
-  }
-
-  .barre-verte2 {
-    height: 4rem;
-    width: 1.2rem;
-  }
-
-  .pub > h1 {
-    font-size: 3rem;
   }
 
   .leader-barre {
-    align-items: end;
-    flex-direction: row;
-    writing-mode: horizontal-tb;
-    transform: none;
-    gap: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
   }
 
-  .leader-img {
-    width: 100%;
-    /* height: 25rem; */
-    /* background: red; */
+  .pub>h1 {
+    font-weight: var(--font-weight-h1);
+    font-size: 4rem;
+    color: var(--third-color);
   }
 
-  .leader-img > img {
-    width: 100%;
-    /* height: 100%; */
+  .barre-verte2 {
+    height: 5.5rem;
+    width: 1rem;
+    background-color: var(--third-color);
+    font-weight: var(--font-weight-h1);
+    font-size: 2rem;
   }
 
-  /* !section-women */
+  .barre-verte3 {
+    height: 5.5rem;
+    width: 1rem;
+    background-color: var(--third-color);
+    font-weight: var(--font-weight-h1);
+    font-size: 2rem;
+  }
+
+  /* !section news */
 
   .women {
-    padding: 5rem 2rem 5rem 2rem;
-    overflow-x: scroll;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    gap: 5rem;
+    padding: 10rem 2rem 10rem 2rem;
+  }
+
+  .women-content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+
+  .women-img>img {
+    width: 30rem;
+    height: auto;
+    border-radius: 1rem;
+  }
+
+  .women-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .women-text>p {
+    font-weight: var(--font-weight-p);
+    font-size: 1.2rem;
+    font-style: italic;
+    color: var(--secondary-color);
+  }
+
+  .women-text>h1 {
+    font-size: 2.4rem;
+    font-weight: var(--font-weight-x);
+    color: var(--primary-color);
   }
 
   /* !footer */
 
-  .container > img {
-    width: 40%;
+  footer {
+    width: 100%;
+    background-color: var(--secondary-color);
   }
 
-  .container-icon > a > img {
-    width: 3rem;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 5rem 0;
   }
-}
+
+  .container-icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+  }
+    html {
+      overflow-x: hidden;
+    }
+
+    /*!section martinez zogo  */
+
+    .actualite {
+      height: 35rem;
+      gap: 2rem;
+    }
+
+    .actualite>h1 {
+      font-size: 2rem;
+      text-align: center;
+    }
+
+    .actualite-martinezzogo {
+      width: 100%;
+    }
+
+    .actualite-martinezzogo>iframe {
+      border-radius: 0;
+    }
+
+    /*!section programme */
+
+    .programme {
+      width: 100%;
+      padding: 2rem;
+    }
+
+    .programme>h1 {
+      font-size: 2rem;
+      text-align: center;
+    }
+
+    .programme-container {
+      flex-direction: column;
+      gap: 1rem;
+      width: 100%;
+    }
+
+    .programme-container-content-one {
+      width: 100%;
+    }
+
+    .programme-container-content-one>iframe {
+      border-radius: 0;
+      width: fit-content;
+      width: 100%;
+      height: 100%;
+    }
+
+    .programme-container-content-two {
+      gap: 1.5rem;
+    }
+
+    /* !section news */
+
+    .news {
+      padding: 3rem;
+      overflow-x: scroll;
+      gap: 3rem;
+
+    }
+
+    /* !section comment */
+
+    .comment {
+      flex-direction: column-reverse;
+      width: 100%;
+      height: 80%;
+      padding: 5rem 4rem 5rem 4rem;
+    }
+
+    .comment-video {
+      /* background-color: #000e01; */
+      /* border-radius: 0; */
+      width: 100%;
+      /* height: 100%;  */
+    }
+
+    .comment-video>iframe {
+      border-radius: O;
+      width: 100%;
+      /* height: 100%; */
+    }
+
+    /*  !leader*/
+
+    .leader {
+      flex-direction: column;
+      align-items: normal;
+      padding: 1rem;
+      gap: 2rem;
+      width: 100%;
+    }
+
+    .barre-verte3 {
+      display: none;
+    }
+
+    .barre-verte2 {
+      height: 4rem;
+      width: 1.2rem;
+    }
+
+    .pub>h1 {
+      font-size: 3rem;
+    }
+
+    .leader-barre {
+      align-items: end;
+      flex-direction: row;
+      writing-mode: horizontal-tb;
+      transform: none;
+      gap: 1.5rem;
+    }
+
+    .leader-img {
+      width: 100%;
+      /* height: 25rem; */
+      /* background: red; */
+    }
+
+    .leader-img>img {
+      width: 100%;
+      /* height: 100%; */
+    }
+
+    /* !section-women */
+
+    .women {
+      padding: 5rem 2rem 5rem 2rem;
+      overflow-x: scroll;
+    }
+
+    /* !footer */
+
+    .container>img {
+      width: 40%;
+    }
+
+    .container-icon>a>img {
+      width: 3rem;
+    }
+  }
